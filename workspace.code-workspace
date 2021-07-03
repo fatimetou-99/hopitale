@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../draft/Login_v14/vendor"
+		},
+		{
+			"path": "../draft/Login_v14/fonts"
+		},
+		{
+			"path": "../draft/login2/scss"
+		}
+	],
+	"settings": {}
+}
