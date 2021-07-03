@@ -15,10 +15,10 @@ if (isset($_POST['login']) && isset($_POST['pass'])) {
 	$pass = validate($_POST['pass']);
 
 	if (empty($login)) {
-		header("Location: login.php?error=Login est obligatoire");
+		header("Location: login.php?error=User Name is required");
 	    exit();
 	}else if(empty($pass)){
-        header("Location: login.php?error=Mot de passe est obligatoire");
+        header("Location: login.php?error=Password is required");
 	    exit();
 	}else{
 		$sql = "SELECT * FROM admin WHERE login='$login' AND pass='$pass'";
@@ -34,12 +34,12 @@ if (isset($_POST['login']) && isset($_POST['pass'])) {
             	header("Location: index.php");
 		        exit();
             }else{
-				header("Location: login.php?error=Login ou mot de passe incorrect");
+				header("Location: login.php?error=Incorect User name or password");
 		        exit();
 			}
 		}
 		else{
-			header("Location: login.php?error=Login ou mot de passe incorrect");
+			header("Location: login.php?error=Incorect User name or password");
 	        exit();
 		}
 	}
